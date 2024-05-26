@@ -23,7 +23,7 @@
                <p class="name">Jomer Dorego</p>
 
                <div class="code-link">
-                  <a href="#"><i class="fa-brands fa-github"></i> Download Code Here.</a>
+                  <a target="_blank" href="https://github.com/jcoder6/laravel-to-read-app.git"><i class="fa-brands fa-github"></i> Download Code Here.</a>
                </div>
          </div>
       </footer>

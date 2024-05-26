@@ -33,7 +33,7 @@ class BooksController extends Controller
 
         Book::create($data);
 
-        return redirect('books')->with('success', 'Book Added');
+        return redirect('/')->with('success', 'Book Added');
 
     }
 
@@ -64,7 +64,7 @@ class BooksController extends Controller
 
         Book::findOrFail($id)->update($data);
 
-        return redirect('books')->with('success', 'Book Updated');
+        return redirect('/')->with('success', 'Book Updated');
     }
 
     public function confirmDelete(int $id){
@@ -83,7 +83,7 @@ class BooksController extends Controller
         $book = Book::findOrFail($id);
         $book->delete();
 
-        return redirect('books')->with('danger', 'Book Deleted');
+        return redirect('/')->with('danger', 'Book Deleted');
 
     }
 }

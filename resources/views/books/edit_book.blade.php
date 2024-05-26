@@ -2,7 +2,7 @@
 
 <div class="overlay"></div>
 <div class="add-new-student-modal">
-    <a href="{{ url('books') }}" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+    <a href="{{ url('/') }}" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
     <h3>Edit A Book</h3>
     <form action="{{ url('books/'.$book->id.'/update') }}" method="POST">
         @csrf
